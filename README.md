@@ -57,24 +57,30 @@ cd todo-cicd
 npm install
 ```
 
-2. Set up your database connection:
-   - Create a `.env` file in the root directory (optional, you can also set it directly)
+4. Set up your database connection:
+   - Create a account in railwaydb and get the database url
+   - Create a `.env` file in the root directory
    - Add your PostgreSQL connection URL:
+
    ```
-   DATABASE_URL=postgresql://username:password@host:port/database....... from railwaydb
+   touch .env # Create .env file
+   nano .env # Edit .env file
+
+   # Paste the database url from railwaydb in the below format
+   # DATABASE_URL=postgresql://username:password@host:port/database....... from railwaydb
    ```
    
-3. Start the server:
+5. Start the server using pm2
 ```bash
-npm start
+pm2 start server.js
 ```
 
-4. Open your browser and navigate to:
+6. Open your browser and navigate to:
 ```
 http://<serveripv4>:3000
 ```
 
-**Note**: The database table will be created automatically on first run if it doesn't exist.
+**Note**: The database table might not be created automatically on first run if it doesn't exist.
 
 ## Project Structure
 
