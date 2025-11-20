@@ -53,6 +53,7 @@ git clone https://github.com/Namita24292176/todo-cicd.git
 
 3. Install dependencies:
 ```bash
+cd todo-cicd
 npm install
 ```
 
