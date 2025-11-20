@@ -41,7 +41,7 @@ A full-stack todo application with complete CRUD (Create, Read, Update, Delete) 
    npm -v # Should print "11.6.2".
    ```
    
-   3. Install pm2
+   - Install pm2
    ```bash
    npm install -g pm2
    ```
