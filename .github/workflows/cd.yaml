@@ -1,4 +1,4 @@
-name: Deploy to droplet
+name: Deploy to EC2
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    name: Push to droplet
+    name: Push to EC2
     runs-on: ubuntu-latest
 
     steps:
@@ -17,12 +17,12 @@ jobs:
       - name: executing remote ssh commands using ssh
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: 56.228.24.1
+          host: 51.21.195.131
           username: ubuntu
           key: ${{ secrets.PRIVATE_SSH_KEY }}
           port: 22
           script: |
-            cd nam-todo
+            cd todo-cicd
             git pull origin main
             export NVM_DIR=~/.nvm
             source ~/.nvm/nvm.sh
