@@ -24,6 +24,28 @@ A full-stack todo application with complete CRUD (Create, Read, Update, Delete) 
 
 ### Installation
 
+1. Install prerequisites
+   1. Install NVM
+   ```bash
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+   \. "$HOME/.nvm/nvm.sh"
+   ```
+   
+   2. Install node
+   ```bash
+   nvm install 24
+
+   # Verify the Node.js version:
+   node -v # Should print "v24.11.1".
+   # Verify npm version:
+   npm -v # Should print "11.6.2".
+   ```
+   
+   3. Install pm2
+   ```bash
+   npm install -g pm2
+   ```
+
 1. Install dependencies:
 ```bash
 npm install
@@ -43,7 +65,7 @@ npm start
 
 4. Open your browser and navigate to:
 ```
-http://localhost:3000
+http://<serveripv4>:3000
 ```
 
 **Note**: The database table will be created automatically on first run if it doesn't exist.
