@@ -33,13 +33,9 @@ npm install
    - Create a `.env` file in the root directory (optional, you can also set it directly)
    - Add your PostgreSQL connection URL:
    ```
-   DATABASE_URL=postgresql://username:password@host:port/database
+   DATABASE_URL=postgresql://username:password@host:port/database....... from railwaydb
    ```
-   - Or set it as an environment variable:
-   ```bash
-   export DATABASE_URL=postgresql://username:password@host:port/database
-   ```
-
+   
 3. Start the server:
 ```bash
 npm start
