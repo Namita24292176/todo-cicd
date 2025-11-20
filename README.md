@@ -25,13 +25,13 @@ A full-stack todo application with complete CRUD (Create, Read, Update, Delete) 
 ### Installation
 
 1. Install prerequisites
-   1. Install NVM
+   - Install NVM
    ```bash
    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
    \. "$HOME/.nvm/nvm.sh"
    ```
    
-   2. Install node
+   - Install node
    ```bash
    nvm install 24
 
@@ -45,8 +45,13 @@ A full-stack todo application with complete CRUD (Create, Read, Update, Delete) 
    ```bash
    npm install -g pm2
    ```
+   
+2. Clone repository
+```bash
+git clone https://github.com/Namita24292176/todo-cicd.git
+```
 
-1. Install dependencies:
+3. Install dependencies:
 ```bash
 npm install
 ```
