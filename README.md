@@ -66,8 +66,8 @@ npm install
    touch .env # Create .env file
    nano .env # Edit .env file
 
-   # Paste the database url from railwaydb in the below format
-   # DATABASE_URL=postgresql://username:password@host:port/database....... from railwaydb
+   # Paste the database url in .env file
+   # DATABASE_URL=postgresql://username:password@host:port/databasename
    ```
    
 5. Start the server using pm2
@@ -77,10 +77,8 @@ pm2 start server.js
 
 6. Open your browser and navigate to:
 ```
-http://<serveripv4>:3000
+https://todo.namita.me
 ```
-
-**Note**: The database table might not be created automatically on first run if it doesn't exist.
 
 ## Project Structure
 
