@@ -47,7 +47,7 @@ jobs:
   deploy:
     name: Deploy to EC2
     runs-on: ubuntu-latest
-    needs: sonarcloud  # Deploy only after SonarCloud passes
+    needs: sonarcloud  # Deploy only after SonarCloud passe
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     
     steps:
